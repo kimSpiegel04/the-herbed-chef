@@ -1,5 +1,6 @@
 body {
     background-color: #f8eeb4;
+    align-content: center;
 }
 
 /* .navbar {
@@ -88,7 +89,7 @@ body {
 .grow:hover { 
     transform: scale(1.1);
 }
-
+/* 
 .meal, .greg, .soup {
     overflow: hidden;
-}
+} */
