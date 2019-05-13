@@ -1,7 +1,94 @@
-.navbar-custom {
-    background-color: #76b39d;
+body {
+    background-color: #f8eeb4;
 }
 
 /* .navbar {
-    transition: background-color 0.5s ease-in-out;
+    background-color: transparent;
+    transition: background-color 1s ease 0s;
+} 
+
+.navbar-custom {
+    background-color: #1b1919;
+    
+}
+
+/* brand and text color */
+/* .navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: #f8eeb4;
+}
+
+/* link color */
+/* .navbar-custom .navbar-nav .nav-link {
+    color: #f8eeb4;
+}
+
+/* change the color of active or hovered links */
+/* .navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #f8eeb4c0;
+}
+.navbar-custom .navbar-brand:hover {
+    color: #f8eeb4
 } */
+
+.navbar {
+    background-color: transparent;
+    border: none;
+    color: #f8eeb4;
+    z-index: 100;
+    transition: background-color 1s ease 0s;
+  }
+   
+  /* Solid class attached on scroll past first section */
+  
+.solid {
+    background-color: #1b1919;
+    transition: background-color 1s ease 0s;
+    box-shadow: 0 0 4px grey;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: #f8eeb4;
+    /* transition: color 1s ease 0s; */
+}
+  
+.navbar-custom .navbar-nav .nav-link {
+    color: #f8eeb4;
+    transition: color 1s ease 0s;
+}
+
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #f8eeb4c0;
+}
+
+.carousel {
+    margin-bottom: 100px;
+}
+
+.port {
+    background-size: cover;
+    width: 250px;
+    margin: 10px 0 0 10px;
+    position: relative;
+    float: left;
+}
+ 
+.port-img {
+    height: 250px;
+    border: 10px #a7d129 solid;
+}
+
+.grow { 
+    transition: all .1s ease-in-out; 
+}
+
+.grow:hover { 
+    transform: scale(1.1);
+}
+
+.meal, .greg, .soup {
+    overflow: hidden;
+}
