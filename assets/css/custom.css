@@ -1,2 +1,82 @@
 /* COLOR PALETTE */
-/* #f8b400(yellow_), #faf5e4(white_), #2c786c(seafoam), #004445(forrest) */
+/* #f8b400(yellow_), #faf5e4(white_), #2c786c(seafoam), #004445(forest) */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+
+html{
+    font: normal 16px sans-serif;
+    color: #001111;
+}
+
+
+/**Navbar*/
+/* Navbar when scroll */
+.navbar-default{
+    background-color: #f8b600;
+    box-shadow: 0 6px 6px -6px rgba(0, 0, 0, 0.479);
+}
+
+.navbar-default .navbar-brand{
+    font-weight: 600;
+    color: #faf5e4;
+    background-color: #f8b600;
+}
+
+.navbar-default img{
+    background-color: #f8b600;
+}
+
+.navbar-default .navbar-header{
+    background-color: #f8b600;
+}
+
+.navbar-default .navbar-collapse{
+    background-color: #f8b600;
+}
+
+.navbar-default .navbar-nav>li{
+    background-color: #f8b600;
+} 
+
+.navbar-default .navbar-nav>li>a:hover{
+    text-transform: lowercase;
+} 
+
+.navbar-default .navbar-nav>li>a {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #faf5e4;
+    background-color: #f8b600;
+}
+
+/* Transparent Navbar (top) */
+.navbar-transparent .navbar-brand{
+    color: #004445;
+    font-weight: 600;
+}
+
+.navbar-transparent .navbar-nav>li>a {
+    color:#004445;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+.navbar-transparent .navbar-nav>li>a:hover{
+    background-color: inherit;
+    color: #004445;
+    text-transform: lowercase;
+}
+
+
+
+.box{
+    height: 1000px;
+} 
