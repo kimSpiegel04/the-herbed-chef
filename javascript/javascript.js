@@ -53,3 +53,16 @@ $document.scroll(function(){
 // }
 
 // window.addEventListener('scroll', debounce(checkSlide));
+
+//* what this
+const pressed = [];
+const secretCode = 'yumyum';
+
+window.addEventListener('keyup', (e) => {
+    console.log(e.key);
+    pressed.push(e.key);
+    pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+    if (pressed.join('').includes(secretCode)) {
+        cornify_add();
+    }
+});
