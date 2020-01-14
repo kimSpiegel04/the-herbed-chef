@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: white;
+    /* background-color: #faf5e481; */
 }
 
 
@@ -18,31 +18,14 @@ html{
 /**Navbar*/
 /* Navbar when scroll */
 .navbar-default{
-    background-color: #f8b600;
+    background-color: #f8b600bd;
     box-shadow: 0 6px 6px -6px rgba(0, 0, 0, 0.479);
 }
 
 .navbar-default .navbar-brand{
     font-weight: 600;
     color: #faf5e4;
-    background-color: #f8b600;
 }
-
-.navbar-default img{
-    background-color: #f8b600;
-}
-
-.navbar-default .navbar-header{
-    background-color: #f8b600;
-}
-
-.navbar-default .navbar-collapse{
-    background-color: #f8b600;
-}
-
-.navbar-default .navbar-nav>li{
-    background-color: #f8b600;
-} 
 
 .navbar-default .navbar-nav>li>a:hover{
     text-transform: lowercase;
@@ -53,13 +36,16 @@ html{
     font-weight: 600;
     text-transform: uppercase;
     color: #faf5e4;
-    background-color: #f8b600;
 }
 
 /* Transparent Navbar (top) */
+.navbar-transparent{
+    background-color: #faf5e491;
+}
 .navbar-transparent .navbar-brand{
     color: #004445;
     font-weight: 600;
+
 }
 
 .navbar-transparent .navbar-nav>li>a {
@@ -67,16 +53,76 @@ html{
     font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
-
 }
+
 .navbar-transparent .navbar-nav>li>a:hover{
     background-color: inherit;
     color: #004445;
     text-transform: lowercase;
 }
 
+/** Carousel */
+.carousel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100vh; 
+    width:100%;
+    z-index: -1;
+}
+.carousel-inner{height:100vh; width:100%}
+.item{height:100%; width:100%}
 
+/** Hero */
+.hero{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    color: black;
+}
 
-.box{
-    height: 1000px;
-} 
+.hero h1 {
+    font: bold 60px "Open Sans", sans-serif;
+    margin-bottom: 15px;
+}
+
+.hero h3 {
+    font: normal 28px "Open Sans", sans-serif;
+    margin-bottom: 40px;
+}
+
+.hero a.btn {
+    padding: 20px 46px;
+}
+
+.hero-content-area{
+    opacity: 0;
+    margin-top: 100px;
+    animation: 1s slidefade 1s forwards;
+}
+
+@keyframes slidefade{
+    100%{
+        opacity: 1;
+        margin: 0;
+    }
+}
+
+@media (max-width: 800px){
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero h3 {
+        font-size: 24px;
+    }
+
+    .hero a.btn {
+        padding: 15px 40px;
+    }
+}
